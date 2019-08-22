@@ -44,7 +44,7 @@ float rocAucScore(std::vector<std::pair<float,int> > data){
 
   double count_false_positive = 0;
   double count_true_positive = 0;
-  double score_prev = -std::numeric_limits<double>::infinity();
+  double score_prev = -1;
   
   for (int i = 0; i < L; i++) {
     double score = data[i].first;
